@@ -9,7 +9,9 @@
   "dependencies": {
     "cors": "^2.8.1",
     "dotenv": "^8.6.0",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "ip": "^1.1.8",
+    "languagedetect": "^2.0.0"
   },
   "repository": {
     "type": "git",

@@ -31,7 +31,8 @@ app.get('/api/whoami', function (req, res) {
   });*/
   //let host = req.headers.host.split("").indexOf(":");
   //let resu = req.headers.host.split("").slice(0,host).join("");
-  res.json({"ipadress":requestIp.getClientIp(req),"language":req.headers['accept-language'],"software":req.headers['user-agent']});
+  //requestIp.getClientIp(req
+  res.json({"ipadress":req.socket.localAddress,"language":req.headers['accept-language'],"software":req.headers['user-agent']});
 });
 
 // listen for requests :)
